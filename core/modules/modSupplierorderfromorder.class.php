@@ -1,4 +1,5 @@
 <?php
+
 /* <one line to give the program's name and a brief idea of what it does.>
  * Copyright (C) 2013 ATM Consulting <support@atm-consulting.fr>
  *
@@ -13,34 +14,35 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
 /**
- * 	\defgroup	mymodule	MyModule module
+ * 	\defgroup	MyModule module
  * 	\brief		MyModule module descriptor.
- * 	\file		core/modules/modMyModule.class.php
+ * 	\file		core/modules/modSupplierorderfromorder.class.php
  * 	\ingroup	mymodule
  * 	\brief		Description and activation file for module MyModule
  */
+
 include_once DOL_DOCUMENT_ROOT . "/core/modules/DolibarrModules.class.php";
 
 /**
- * Description and activation class for module MyModule
+ * Description and activation class for module Supplierorderfromorder
  */
 class modSupplierorderfromorder extends DolibarrModules
 {
 
-    /**
-     * 	Constructor. Define names, constants, directories, boxes, permissions
-     *
-     * 	@param	DoliDB		$db	Database handler
-     */
-    public function __construct($db)
-    {
-        global $langs, $conf;
+	/**
+	 * 	Constructor. Define names, constants, directories, boxes, permissions
+	 *
+	 * 	@param	DoliDB		$db	Database handler
+	 */
+	public function __construct($db)
+	{
+		global $langs, $conf;
 
-        $this->db = $db;
+		$this->db = $db;
 
 		$this->editor_name = 'ATM Consulting';
 	    $this->editor_url = 'https://www.atm-consulting.fr';

@@ -46,35 +46,44 @@ class modSupplierorderfromorder extends DolibarrModules
 
 		$this->editor_name = 'ATM Consulting';
 	    $this->editor_url = 'https://www.atm-consulting.fr';
-        // Id for module (must be unique).
+
+		// Id for module (must be unique).
         // Use a free id here
         // (See in Home -> System information -> Dolibarr for list of used modules id).
         $this->numero = 104130; // 104000 to 104999 for ATM CONSULTING
+		
         // Key text used to identify module (for permissions, menus, etc...)
         $this->rights_class = 'supplierorderfromorder';
 
         // Family can be 'crm','financial','hr','projects','products','ecm','technic','other'
         // It is used to group modules in module setup page
         $this->family = "ATM Consulting - CRM";
+		
         // Module label (no space allowed)
         // used if translation string 'ModuleXXXName' not found
         // (where XXX is value of numeric property 'numero' of module)
         $this->name = preg_replace('/^mod/i', '', get_class($this));
+		
         // Module description
         // used if translation string 'ModuleXXXDesc' not found
         // (where XXX is value of numeric property 'numero' of module)
         $this->description = "Module commande fournisseur à partir d'une commande client";
+		
         // Possible values for version are: 'development', 'experimental' or version
         $this->version = '2.5.1';
+		
 		// Url to the file with your last numberversion of this module
 		require_once __DIR__ . '/../../class/techatm.class.php';
 		$this->url_last_version = \supplierorderfromorder\TechATM::getLastModuleVersionUrl($this);
+		
         // Key used in llx_const table to save module status enabled/disabled
         // (where MYMODULE is value of property name of module in uppercase)
         $this->const_name = 'MAIN_MODULE_' . strtoupper($this->name);
+		
         // Where to store the module in setup page
         // (0=common,1=interface,2=others,3=very specific)
         $this->special = 0;
+		
         // Name of image file used for this module.
         // If file is in theme/yourtheme/img directory under name object_pictovalue.png
         // use this->picto='pictovalue'

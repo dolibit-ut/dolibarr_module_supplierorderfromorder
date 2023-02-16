@@ -18,11 +18,11 @@
  */
 
 /**
- * 	\defgroup	MyModule module
- * 	\brief		MyModule module descriptor.
- * 	\file		core/modules/modSupplierorderfromorder.class.php
- * 	\ingroup	mymodule
- * 	\brief		Description and activation file for module MyModule
+ *	\defgroup	MyModule module
+ *	\brief		MyModule module descriptor.
+ *	\file		core/modules/modSupplierorderfromorder.class.php
+ *	\ingroup	mymodule
+ *	\brief		Description and activation file for module MyModule
  */
 
 include_once DOL_DOCUMENT_ROOT . "/core/modules/DolibarrModules.class.php";
@@ -48,7 +48,6 @@ class modSupplierorderfromorder extends DolibarrModules
 	    $this->editor_url = 'https://www.atm-consulting.fr';
 
 		// Id for module (must be unique).
-        // Use a free id here
         // (See in Home -> System information -> Dolibarr for list of used modules id).
         $this->numero = 104130; // 104000 to 104999 for ATM CONSULTING
 		
@@ -67,7 +66,7 @@ class modSupplierorderfromorder extends DolibarrModules
         // Module description
         // used if translation string 'ModuleXXXDesc' not found
         // (where XXX is value of numeric property 'numero' of module)
-        $this->description = "Module commande fournisseur à partir d'une commande client";
+        $this->description = "Supplier order module from a sales order";
 		
         // Possible values for version are: 'development', 'experimental' or version
         $this->version = '2.5.1';

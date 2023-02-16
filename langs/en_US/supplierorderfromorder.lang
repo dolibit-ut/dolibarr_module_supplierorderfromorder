@@ -1,5 +1,6 @@
-Module104130Name=Supplier orders from customer order 
-Module104130Desc=Create supplier orders from a customer order
+Module104130Name = Supplier orders from customer order 
+Module104130Desc = Create supplier orders from a customer order
+
 SelectProduct=Select at least one product and one supplier
 ProductsToOrder=Product to order
 OrderToSuppliers=Create supplier order
@@ -26,7 +27,8 @@ SOFO_DEFAULT_PRODUCT_CATEGORY_FILTER=Default product category filter
 DeleteFilter=Delete filter
 NoFilter=No filter
 
-SOFO_PRESELECT_SUPPLIER_PRICE_FROM_LINE_BUY_PRICE=By default, preselect the supplier prices equal to the buying price set in the initial customer order (needs module Margins)
+# SOFO_
+SOFO_PRESELECT_SUPPLIER_PRICE_FROM_LINE_BUY_PRICE = By default, preselect the supplier prices equal to the buying price set in the initial customer order (needs module Margins)
 
 PurgeSessionForCachedProduct=Display based on a product cache, purge the cache?
 SOFO_GET_INFOS_FROM_FOURN=When generating a supplier order, update the payment conditions, payment methods from customer

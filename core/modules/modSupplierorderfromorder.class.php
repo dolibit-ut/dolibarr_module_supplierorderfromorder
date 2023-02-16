@@ -48,16 +48,16 @@ class modSupplierorderfromorder extends DolibarrModules
 	    $this->editor_url = 'https://www.atm-consulting.fr';
 
 		// Id for module (must be unique).
-        // (See in Home -> System information -> Dolibarr for list of used modules id).
-        $this->numero = 104130; // 104000 to 104999 for ATM CONSULTING
-		
-        // Key text used to identify module (for permissions, menus, etc...)
-        $this->rights_class = 'supplierorderfromorder';
+		// (See in Home -> System information -> Dolibarr for list of used modules id).
+		$this->numero = 104130; // 104000 to 104999 for ATM CONSULTING
 
-        // Family can be 'crm','financial','hr','projects','products','ecm','technic','other'
-        // It is used to group modules in module setup page
-        $this->family = "ATM Consulting - CRM";
-		
+		// Key text used to identify module (for permissions, menus, etc...)
+		$this->rights_class = 'supplierorderfromorder';
+
+		// Family can be 'crm','financial','hr','projects','products','ecm','technic','other'
+		// It is used to group modules in module setup page
+		$this->family = "ATM Consulting - CRM";
+
         // Module label (no space allowed)
         // used if translation string 'ModuleXXXName' not found
         // (where XXX is value of numeric property 'numero' of module)
